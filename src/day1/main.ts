@@ -3,9 +3,7 @@ import { readTextFile } from '../utils'
 
 const main = async () => {
     const test = true
-    const rawInput = await readTextFile(
-        __dirname + (test ? '/testInput.txt' : '/input.txt')
-    )
+    const rawInput = await readTextFile(__dirname, test)
 
     let totalDistance = 0
     let similarityScore = 0

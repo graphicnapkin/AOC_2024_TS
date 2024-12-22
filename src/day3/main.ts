@@ -2,9 +2,7 @@ import { readTextFile } from "../utils";
 
 const main = async () => {
   const test = false;
-  let rawInput = await readTextFile(
-    __dirname + (test ? "/testInput.txt" : "/input.txt")
-  );
+  let rawInput = await readTextFile(__dirname, test);
   let total = 0;
   //handle conditionals
   rawInput = rawInput

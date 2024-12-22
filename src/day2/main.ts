@@ -2,9 +2,7 @@ import { readTextFile } from '../utils'
 
 const main = async () => {
     const test = false
-    const rawInput = await readTextFile(
-        __dirname + (test ? '/testInput.txt' : '/input.txt')
-    )
+    const rawInput = await readTextFile(__dirname, test)
 
     let safeCount = 0
 
