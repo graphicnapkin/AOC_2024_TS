@@ -30,7 +30,7 @@ const main = async () => {
         level.forEach((num, i) => {
             let next = i + 1
             if (next == level.length) return
-            if (num > level[i + 1]) return down++
+            if (num > level[next]) return down++
             up++
         })
 
