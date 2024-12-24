@@ -13,7 +13,7 @@ const main = async () => {
     let part2Score = 0
 
     const getSquare = (x: number, y: number) => {
-        return !gameBoard[y] || !gameBoard[y][x] ? '' : gameBoard[y][x]
+        return !gameBoard[y]?.[x] ? '' : gameBoard[y][x]
     }
 
     const checkSpotPart1 = ([
